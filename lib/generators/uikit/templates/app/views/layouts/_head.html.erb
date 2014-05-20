@@ -1,0 +1,8 @@
+<head>
+  <title><%= content_for(:title) || "YOUR DEFAULT TITLE" %></title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= yield :stylesheets %>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%= csrf_meta_tags %>
+</head>

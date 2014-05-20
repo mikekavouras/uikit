@@ -1,7 +1,7 @@
 @import "uikit/colors.scss";
 
-$sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+$sans: sans-serif; // replace with your fonts
+$serif: serif; // replace with your fonts
 
 body {
   font-family: $sans;
@@ -19,26 +19,15 @@ h1, h2, h3, h4, h5, h6, p, a, li, address {
 }
 
 h1 {
-  font-size: 2.6em;
+  font-size: 3.0em;
   margin-bottom: 0.385em;
-  white-space:pre;
   font-family: $serif;
-
-  &.home {
-    @extend .header;
-    font-family: $sans;
-  }
 }
 
 h2 {
-  font-size: 2.6em;
+  font-size: 2.4em;
   margin-bottom: 0.385em;
   @extend .header;
-
-  &.home {
-    @extend .header;
-    font-family: $sans;
-  }
 }
 
 h3 {
@@ -51,27 +40,14 @@ textarea, p, address {
   font-family: $sans;
   font-weight: 300;
   line-height: 22px;
-
-  &.description{
-    font-size: 1.5em;
-  }
-
-  &.caption {
-    font-size: 1.9em;
-    font-style: italic;
-    line-height: 1.3em;
-  }
-
-  &.bold {
-    font-weight: bold;
-  }
 }
 
 a {
   text-decoration: none;
+  color: $link;
 
   &:hover {
-    color: $button;
+    color: lighten($link, 10%);
   }
 }
 
@@ -80,6 +56,6 @@ a {
     font-size: 2.2em;
   }
   h3 {
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
 }

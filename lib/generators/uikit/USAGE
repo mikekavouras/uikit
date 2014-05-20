@@ -23,7 +23,6 @@ Example:
     app/assets/stylesheets/uikit/forms.scss
     app/assets/stylesheets/uikit/layout.scss
     app/assets/stylesheets/uikit/reset.scss
-    app/assets/stylesheets/mixins/animate.scss
-    app/assets/stylesheets/mixins/border-helper.scss
-    app/assets/stylesheets/mixins/box-shadow.scss
+    app/assets/stylesheets/mixins/font-face.scss
+    app/assets/stylesheets/mixins/normalize.scss
 
